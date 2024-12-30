@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jeopardy!</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    >
+  </head>
+  <body>
+    <h1>Jeopardy!</h1>
+
+    <button id="play">
+      <!-- When the game ends, update the text. -->
+      Start the Game!
+    </button>
+
+    <h1>
+      <table>
+        <thead>
+          <tr id="categories">
+            <!-- The categories will be dynamically populated here. -->
+            <th>Category 1</th>
+            <th>Category 2</th>
+            <th>Category 3</th>
+            <th>Category 4</th>
+            <th>Category 5</th>
+            <th>Category 6</th>
+          </tr>
+        </thead>
+        <tbody id="clues">
+          <!-- Rows will be dynamically filled with clues once the game starts -->
+          <!-- Example of rows for clue values ($100, $200, etc.) -->
+        </tbody>
+      </table>
+
+      <div id="active-clue">
+        <!-- This will show the question when a clue is clicked, and the answer after that -->
+      </div>
+    </h1>
+
+
+    <div id="spinner" class="disabled">
+      <i class="fa fa-spin fa-spinner"></i>
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="https://unpkg.com/lodash"></script>
+    <script src="jeopardy.js"></script>
+  </body>
+</html>

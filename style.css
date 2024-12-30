@@ -1,0 +1,153 @@
+/* Overall body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header style */
+h1 {
+  color: #060ce9;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+
+/* Play button */
+#play {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #115ff4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play:hover {
+  background-color: #060ce9;
+}
+
+/* Table styling */
+/* Table layout and alignment */
+/* Table styling */
+/* Table styling */
+/* Table Styling */
+table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Remove extra spacing between cells */
+  table-layout: fixed; /* Force uniform column widths */
+}
+
+thead th,
+tbody td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+}
+
+/* Make header and body rows align perfectly */
+thead th {
+  background-color: #550a92;
+  color: white;
+  font-size: 1em;
+}
+
+tbody td {
+  background-color: #111f9c;
+  color: white;
+  cursor: pointer;
+}
+
+tbody td:hover {
+  background-color: #2aa5b5;
+}
+
+/* Responsive column width */
+thead th, tbody td {
+  width: calc(100% / 6); /* Adjust this for the number of categories (6 here) */
+}
+
+
+
+/* Adjust clue alignment */
+tbody tr {
+  display: table-row; /* Default table row layout */
+}
+
+tbody td {
+  width: calc(100% / 6); /* Divide width equally among 6 categories */
+}
+
+
+.category-column {
+  display: flex;
+  flex-direction: column; /* Stack clues vertically */
+  align-items: center;
+}
+
+.category-column .clue {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #111f9c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-column .clue:hover {
+  background-color: #2aa5b5;
+}
+
+
+
+thead th {
+  background-color: #550a92;
+  color: white;
+}
+
+tbody td:hover {
+  background-color: #2aa5b5;
+  color: white;
+}
+
+/* Active clue section */
+#active-clue {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #111f9c;
+  color: white;
+  border-radius: 5px;
+}
+
+#active-clue:hover {
+  background-color: #2aa5b5
+}
+
+/* Spinner (used during game setup) */
+#spinner {
+  font-size: 3em;
+  color: #060ce9;
+}
+
+/* Add space around the game section */
+section {
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 1em;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
+
